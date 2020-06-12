@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/dashbord.css">
+
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- sidebar -->
+          <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+            <a href="#" class="navbar-brand text-white d-block mx-auto text-center py-3 mb-4 bottom-border">Health Track</a>
+            <div class="bottom-border pb-3">
+              <img src="img/admin.jpeg" width="50" class="rounded-circle mr-3">
+              <a href="#" class="text-white">Maria Helena</a>
+            </div>
+            <ul class="navbar-nav flex-column mt-4">
+              <li class="nav-item"><a href="dashboard.html" class="nav-link text-white p-3 mb-2 current"><i class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a></li>
+              <li class="nav-item"><a href="perfil.html" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>Perfil</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link" data-toggle="modal" data-target="#contato"><i class="fas fa-envelope text-light fa-lg mr-3"></i>Contato</a></li>
+              <li class="nav-item"><a href="dados.html" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-file-medical-alt text-light fa-lg mr-3"></i>Dados</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>Configurações</a></li>
+            </ul>
+          </div>
+          <!-- Fim da sidebar -->
+
+          <!-- top-nav -->
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto bg-dark fixed-top py-2 top-navbar">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <h4 class="text-light text-uppercase mb-0">Dashboard</h4>
+              </div>
+              <div class="col-md-5">
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="form-control search-input" placeholder="Pesquise...">
+                    <button type="button" class="btn btn-white search-button"><i class="fas fa-search text-warning"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-3">
+                <ul class="navbar-nav">
+                  <li class="nav-item icon-parent ml-md-auto"><a href="#" class="nav-link icon-bullet"><i class="fas fa-comments text-muted fa-lg"></i></a></li>
+                  <li class="nav-item icon-parent"><a href="#" class="nav-link icon-bullet"><i class="fas fa-bell text-muted fa-lg"></i></a></li>
+                  <li class="nav-item ml-md-auto"><a href="index.html" class="nav-link" data-toggle="modal" data-target="#sign-out"><i class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Fim top-nav -->
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Fim da navbar -->
+
+  <!--Modal-->
+  <div class="modal fade" id="sign-out">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Você quer sair ?</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Continuar</button>
+
+          <a href="index.html" type="button">
+            <button class="btn btn-danger">Sair</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fim modal-->
+
+  <!--outro modal-->
+  <div class="modal fade font-personalizada2" id="contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <header class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </header>
+        <main class="modal-body">
+
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Nome completo</label>
+              <input type="text" class="control" id="formGroupExampleInput" placeholder="Insira seu nome completo">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Endereço de email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@examplo.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Deixe seu comentário</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
+
+        </main>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!--outro modal Fim-->
+
+  <!--Cards-->
+  <section>
+    <div class="container-fluid">
+      <div class="row mb-5">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+          <div class="row align-items-center pt-md-5 mt-md-3 mb-5">
+            <div class="col-xl-4 col-12 mb-4 mb-xl-0">
+              <div class="card card-common">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <i class="fas fa-weight fa-3x text-warning"></i>
+                    <div class="text-right text-secondary">
+                      <h5>Peso</h5>
+                      <h3>80pk</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-secondary">
+                  <i class="fas fa-sync mr-3"></i>
+                  <span>Atualizar</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-12 p-2">
+              <div class="card card-common">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <i class="fas fa-dumbbell fa-3x text-success"></i>
+                    <div class="text-right text-secondary">
+                      <h5>Exercícios</h5>
+                      <h3>22/05/2020</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-secondary">
+                  <i class="fas fa-sync mr-3"></i>
+                  <span>Atualizar</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-12 p-2">
+              <div class="card card-common">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <i class="fas fa-heartbeat fa-3x text-info"></i>
+                    <div class="text-right text-secondary">
+                      <h5>IMC</h5>
+                      <h3>20.5</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-secondary">
+                  <i class="fas fa-sync mr-3"></i>
+                  <span>Atualizar</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--FIm  Cards-->
+
+  <!--Progress /Task list-->
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+          <div class="row mb-4">
+            <div class="col-xl-6 col-12">
+              <div class="bg-dark text-white p-4 rounded">
+                <h4 class="mb-5">Progresso Semanal</h4>
+                <h6 class="mb-3">Exercícios</h6>
+                <div class="progress mb-4" style="height: 20px;">
+                  <div class="progress-bar progress-bar-striped font-weight-bold" style="width: 91%;">
+                    91%
+                  </div>
+                </div>
+                <h6 class="mb-3">Alimentação</h6>
+                <div class="progress mb-4" style="height: 20px;">
+                  <div class="progress-bar progress-bar-striped font-weight-bold bg-success" style="width: 82%;">
+                    82%
+                  </div>
+                </div>
+                <h6 class="mb-3">Água</h6>
+                <div class="progress mb-4" style="height: 20px;">
+                  <div class="progress-bar progress-bar-striped font-weight-bold bg-danger" style="width: 67%;">
+                    67%
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-12">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Fim Progress /Task list-->
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto mt-5 pt-5">
+          <div class="row border-top pt-3">
+            <div class="col-lg-6 text-center">
+              <ul class="list-inline">
+                <li class="list-inline-item mr-2">
+                  <a href="index.html" class="text-dark">Health Track</a>
+                </li>
+                <li class="list-inline-item mr-2">
+                  <a href="#" class="text-dark">Sobre</a>
+                </li>
+                <li class="list-inline-item mr-2">
+                  <a href="#" class="text-dark">Suporte</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="col-lg-6 text-center">
+              <p>&copy; 2020 Copyright.<span class="text-success">Health Track</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
